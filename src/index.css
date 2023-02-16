@@ -8,5 +8,74 @@
 /* Importamos Manrope */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-/* font-family: 'Kalam', cursive;
-font-family: 'Manrope', sans-serif; */
+/* Añadimos los apply para las fuentes */
+@layer components {
+  .heading1 {
+    @apply font-Manrope font-bold text-5xl leading-tight;
+  }
+
+  .heading2 {
+    @apply font-Manrope font-bold text-[40px] leading-tight;
+  }
+
+  .heading3 {
+    @apply font-Manrope font-bold text-[32px] leading-tight;
+  }
+
+  .heading4 {
+    @apply font-Manrope font-bold text-[20px] leading-tight;
+  }
+
+  .title-small-bold {
+    @apply font-Manrope font-bold text-[14px] leading-[1.4];
+  }
+
+  .title-small-regular {
+    @apply font-Manrope font-normal text-[14px] leading-[1.4];
+  }
+
+  .bigger-semibold {
+    @apply font-Kalam font-bold text-[18px] leading-[1.4];
+  }
+
+  .bigger-regular {
+    @apply font-Kalam font-normal text-[18px] leading-[1.4];
+  }
+
+  .normal-semibold {
+    @apply font-Kalam font-bold text-[16px] leading-[1.4];
+  }
+
+  .normal-regular {
+    @apply font-Kalam font-normal text-[16px] leading-[1.4];
+  }
+
+  .small-semibold {
+    @apply font-Kalam font-bold text-[14px] leading-[1.4];
+  }
+
+  .small-regular {
+    @apply font-Kalam font-normal text-[14px] leading-[1.4];
+  }
+}
+/* 
+ HEADING 1 
+
+
+position: absolute;
+height: 58px;
+left: 0px;
+right: 962.47px;
+top: 55.01px;
+
+ Title/H1 
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 120%;
+/* identical to box height, or 58px 
+
+
+color: #000000; */

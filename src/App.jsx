@@ -2,7 +2,5 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 
 export default function App() {
-  return (
-    <h1 className="text-3xl font-bold underline font-kalam">Hello world!</h1>
-  );
+  return <h1 className="heading4">Hello world!</h1>;
 }

@@ -6,7 +6,7 @@ module.exports = {
       fontFamily: {
         //       font-family: 'Kalam', cursive;
         // font-family: 'Manrope', sans-serif;
-        kalam: ["Kalam", "sans-serif"],
+        Kalam: ["Kalam", "sans-serif"],
         Manrope: ["Manrope", "sans-serif"],
       },
     },
