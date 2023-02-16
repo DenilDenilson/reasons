@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        //       font-family: 'Kalam', cursive;
+        // font-family: 'Manrope', sans-serif;
+        kalam: ["Kalam", "sans-serif"],
+        Manrope: ["Manrope", "sans-serif"],
+      },
+    },
     colors: {
       salmon: {
         100: "#FFD0C0",
