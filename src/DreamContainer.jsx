@@ -1,16 +1,22 @@
 import Heading4 from "./Heading4";
 import user from "./assets/user";
+import DreamSelection from "./DreamSelection";
 
 export default function DreamContainer() {
   let i = 1;
   return (
-    <section>
-      <Heading4 content={"Mis sueños son"} />
-      <span>🙉</span>
-      <ul>
+    <section className="flex flex-col gap-4">
+      <div className="flex justify-between items-center">
+        <Heading4 content={"Mis sueños son"} />
+        <DreamSelection />
+      </div>
+      <ul className="flex flex-col gap-2">
         {user.dreams.map((dream) => (
-          <li className="small-regular text-greys-TEXT">
-            {i++}. {dream}
+          <li key={dream.id} className="flex justify-between">
+            <span className="small-regular text-greys-TEXT w-72 truncate">
+              {i++}. {dream.content}
+            </span>{" "}
+            <span>{dream.emoji}</span>
           </li>
         ))}
       </ul>
