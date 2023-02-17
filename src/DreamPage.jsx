@@ -1,3 +1,4 @@
+import DreamContainer from "./DreamContainer";
 import NavTop from "./NavTop";
 import VisionContainer from "./VisionContainer";
 
@@ -6,6 +7,7 @@ export default function DreamPage() {
     <div className="p-4">
       <NavTop />
       <VisionContainer />
+      <DreamContainer />
     </div>
   );
 }
