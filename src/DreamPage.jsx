@@ -9,7 +9,7 @@ export default function DreamPage() {
   return (
     <div className="min-h-screen relative bg-greys-BG">
       <NavTop />
-      <div className="px-4 pt-14 pb-20">
+      <div className="px-4 pt-14 pb-24">
         <VisionContainer />
         <DreamContainer />
       </div>
