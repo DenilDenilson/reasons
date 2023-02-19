@@ -4,15 +4,14 @@ import VisionContainer from "./VisionContainer";
 import NavBottom from "./NavBot";
 import Add from "./assets/Add";
 import FixedButtom from "./FixedButtom";
+import MainDreams from "./MainDreams";
+import { Outlet } from "react-router-dom";
 
 export default function DreamPage() {
   return (
     <div className="min-h-screen relative bg-greys-BG">
       <NavTop />
-      <div className="px-4 pt-14 pb-24">
-        <VisionContainer />
-        <DreamContainer />
-      </div>
+      <Outlet />
       <NavBottom />
       <FixedButtom />
     </div>
