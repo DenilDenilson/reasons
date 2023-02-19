@@ -2,6 +2,8 @@ import DreamContainer from "./DreamContainer";
 import NavTop from "./NavTop";
 import VisionContainer from "./VisionContainer";
 import NavBottom from "./NavBot";
+import Add from "./assets/Add";
+import FixedButtom from "./FixedButtom";
 
 export default function DreamPage() {
   return (
@@ -12,6 +14,7 @@ export default function DreamPage() {
         <DreamContainer />
       </div>
       <NavBottom />
+      <FixedButtom />
     </div>
   );
 }
