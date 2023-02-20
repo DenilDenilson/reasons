@@ -11,12 +11,12 @@ export default function ReasonContainer() {
         <DreamSelection />
       </div>
       <ul className="flex flex-col gap-2">
-        {user.dreams.map((dream) => (
-          <li key={dream.id} className="flex justify-between">
+        {user.motivos.map((motivo) => (
+          <li key={motivo.id} className="flex justify-between items-center">
             <span className="small-regular text-greys-TEXT w-72 truncate">
-              {i++}. {dream.content}
+              {i++}. {motivo.content}
             </span>{" "}
-            <span>{dream.emoji}</span>
+            <span>{motivo.emoji}</span>
           </li>
         ))}
       </ul>

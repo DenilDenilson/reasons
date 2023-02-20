@@ -12,7 +12,7 @@ export default function DreamContainer() {
       </div>
       <ul className="flex flex-col gap-2">
         {user.dreams.map((dream) => (
-          <li key={dream.id} className="flex justify-between">
+          <li key={dream.id} className="flex justify-between items-center">
             <span className="small-regular text-greys-TEXT w-72 truncate">
               {i++}. {dream.content}
             </span>{" "}
