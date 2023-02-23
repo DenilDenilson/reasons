@@ -57,6 +57,7 @@ export default function NavBot() {
         </span>
       </Link>
       <Link
+        to="/quotes"
         className="flex flex-col items-center gap-1"
         onClick={() => {
           setFilledQuote(true);
