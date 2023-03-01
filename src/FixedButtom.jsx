@@ -35,7 +35,7 @@ export default function FixedButtom() {
         // <h1 className="bg-salmon-900 w-28 h-24 absolute top-0 left-0 right-0 bottom-0 m-auto">
         //   GA
         // </h1>
-        <ModalMore text={"Un sueño más"} closeModel={closeModal} />
+        <ModalMore text={"Un sueño más"} closeModal={closeModal} />
       )}
     </>
   );

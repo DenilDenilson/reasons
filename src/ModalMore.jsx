@@ -2,12 +2,12 @@ import Close from "./assets/Close";
 import SecondaryButton from "./assets/SecondaryButton";
 import DreamSelection from "./DreamSelection";
 
-export default function ModalMore({ text, closeModel }) {
+export default function ModalMore({ text, closeModal }) {
   return (
     <section className="bg-greys-BG w-80 flex flex-col gap-4 absolute top-40 left-0 right-0 m-auto p-4 shadow-xl rounded-lg">
       <p className="heading4 text-greys-TITLE flex justify-between">
         {text}
-        <span onClick={closeModel}>
+        <span onClick={closeModal}>
           <Close className="bg-base-500 rounded-full" />{" "}
         </span>
       </p>
