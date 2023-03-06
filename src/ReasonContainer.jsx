@@ -8,7 +8,7 @@ export default function ReasonContainer() {
     <section className="flex flex-col gap-4">
       <div className="flex justify-between items-center">
         <Heading4 content={"Mis motivos son"} />
-        <DreamSelection />
+        <DreamSelection text={"?"} textStyle={"heading4"} />
       </div>
       <ul className="flex flex-col gap-2">
         {user.motivos.map((motivo) => (

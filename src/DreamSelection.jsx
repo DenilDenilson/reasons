@@ -8,11 +8,38 @@ export default function ({ textStyle, text }) {
   //   setTextStyle("heading4");
   // }
 
+  const [click, setClick] = useState(false);
+
+  const changeClick = () => {
+    setClick(!click);
+  };
+
   return (
-    <div className="flex items-center justify-between pr-1 pl-2 border-2 rounded border-base-500 gap-1">
-      <span className={`text-base-500  ${textStyle}`}>{text}</span>
-      <KeyboardArrowDown width={24} height={24} fill={"#FE4D6B"} />
-      {/* // Color base 500 */}
+    <div
+      onClick={changeClick}
+      className="pr-1 pl-2 border-2 rounded border-base-500 gap-1"
+    >
+      <div className="flex justify-between items-center">
+        <span className={`text-base-500  ${textStyle}`}>
+          {click ? "selection" : "?"}
+        </span>
+        <KeyboardArrowDown width={24} height={24} fill={"#FE4D6B"} />
+        {/* // Color base 500 */}
+      </div>
+
+      {click && (
+        <>
+          <div className="flex justify-between title-small-bold text-greys-TEXT py-1">
+            dinero <span>💵</span>
+          </div>
+          <div className="flex justify-between title-small-bold text-greys-TEXT py-1">
+            profesión <span>💼</span>
+          </div>
+          <div className="flex justify-between title-small-bold text-greys-TEXT py-1">
+            familia <span>👨‍👩‍👧‍👦</span>
+          </div>
+        </>
+      )}
     </div>
   );
 }
