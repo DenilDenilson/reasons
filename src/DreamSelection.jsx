@@ -2,12 +2,6 @@ import { useState } from "react";
 import KeyboardArrowDown from "./assets/KeyboardArrowDown";
 
 export default function ({ textStyle, text }) {
-  //const [textStyle, setTextStyle] = useState("title-small-bold");
-
-  // if (text == "?") {
-  //   setTextStyle("heading4");
-  // }
-
   const [click, setClick] = useState(false);
 
   const changeClick = () => {
@@ -17,7 +11,7 @@ export default function ({ textStyle, text }) {
   return (
     <div
       onClick={changeClick}
-      className="pr-1 pl-2 border-2 rounded border-base-500 gap-1"
+      className="pr-1 pl-2 border-2 rounded border-base-500 gap-1 bg-greys-BG relative"
     >
       <div className="flex justify-between items-center">
         <span className={`text-base-500  ${textStyle}`}>
@@ -29,13 +23,13 @@ export default function ({ textStyle, text }) {
 
       {click && (
         <>
-          <div className="flex justify-between title-small-bold text-greys-TEXT py-1">
+          <div className="flex justify-between title-small-bold text-greys-TEXT py-1 bg-greys-BG">
             dinero <span>💵</span>
           </div>
-          <div className="flex justify-between title-small-bold text-greys-TEXT py-1">
+          <div className="flex justify-between title-small-bold text-greys-TEXT py-1 bg-greys-BG">
             profesión <span>💼</span>
           </div>
-          <div className="flex justify-between title-small-bold text-greys-TEXT py-1">
+          <div className="flex justify-between title-small-bold text-greys-TEXT py-1 bg-greys-BG">
             familia <span>👨‍👩‍👧‍👦</span>
           </div>
         </>

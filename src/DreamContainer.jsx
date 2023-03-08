@@ -6,7 +6,7 @@ export default function DreamContainer() {
   let i = 1;
   return (
     <section className="flex flex-col gap-4">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-start h-7">
         <Heading4 content={"Mis sueños son"} />
         <DreamSelection text={"?"} textStyle={"heading4"} />
       </div>
