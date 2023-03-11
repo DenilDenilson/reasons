@@ -1,6 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import DreamPage from "./dreamPage";
+import DreamPage from "./MainPage";
 
 export default function App() {
   return <DreamPage />;

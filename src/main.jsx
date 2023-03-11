@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
-import DreamPage from "./dreamPage";
+import MainPage from "./MainPage";
 import "./index.css";
 import MainDreams from "./MainDreams";
 import MainQuote from "./MainQuote";
@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<DreamPage />}>
+      <Route path="/" element={<MainPage />}>
         <Route index element={<MainDreams />} />
         <Route path="/reasons" element={<MainReasons />} />
         <Route path="/quotes" element={<MainQuote />} />

@@ -21,7 +21,8 @@ export default function NavTop() {
       </span>
       <span onClick={openModal} className="relative">
         <Person width="32" height="32" color="#FE4D6B" />
-        {showModal && <NavTopOptions />}
+        {/* {showModal && <NavTopOptions />} // Lo saco de acá ya que se // */}
+        {/* renderiza abajo del selectOption*/}
       </span>
     </div>
   );

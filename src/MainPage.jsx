@@ -8,7 +8,7 @@ import MainDreams from "./MainDreams";
 import { Outlet } from "react-router-dom";
 import NavBot from "./NavBot";
 
-export default function DreamPage() {
+export default function MainPage() {
   return (
     <div className="min-h-screen relative bg-greys-BG">
       <NavTop />

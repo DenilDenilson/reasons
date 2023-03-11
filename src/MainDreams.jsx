@@ -7,7 +7,6 @@ export default function MainDreams() {
     <main className="px-4 pt-14 pb-24 flex flex-col gap-4">
       <VisionContainer />
       <DreamContainer />
-      <NavTopOptions />
     </main>
   );
 }
