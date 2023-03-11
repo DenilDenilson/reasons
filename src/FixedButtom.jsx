@@ -9,7 +9,7 @@ export default function FixedButtom() {
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
-    setShowModal(true);
+    setShowModal(!showModal);
   };
 
   const closeModal = () => {
