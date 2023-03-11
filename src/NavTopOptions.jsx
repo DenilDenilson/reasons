@@ -6,7 +6,7 @@ import MailBox from "./assets/MailBox";
 
 export default function NavTopOptions() {
   return (
-    <ul className="absolute right-0 flex flex-col p-4 bg-greys-BG gap-4 border-2 border-base-600 rounded-lg">
+    <ul className="absolute top-12 right-4 flex flex-col p-4 bg-greys-BG gap-4 border-2 border-base-600 rounded-lg">
       <li className="w-64 bg-greys-BG">
         <a href="" className="flex gap-4">
           <span>
