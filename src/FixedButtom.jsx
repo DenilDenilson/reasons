@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import Add from "./assets/Add";
 import Shuffle from "./assets/Shuffle";
@@ -7,6 +7,31 @@ import ModalMore from "./ModalMore";
 export default function FixedButtom() {
   const location = useLocation();
   const [showModal, setShowModal] = useState(false);
+  const [modal_page, setModal_page] = useState({});
+  const modal = {
+    dream: {
+      text: "Un sueño mas",
+      textholder: "Escribe aquí tu sueño",
+    },
+    reason: {
+      text: "Un motivo más",
+      textholder: "Escribe aquí tu motivo",
+    },
+    quote: {
+      text: "Una frase más",
+      textholder: "Escribe aquí tu frase",
+    },
+  };
+
+  useEffect(() => {
+    if (location.pathname.includes("reason")) {
+      setModal_page(modal.reason);
+    } else if (location.pathname.includes("quote")) {
+      setModal_page(modal.quote);
+    } else {
+      setModal_page(modal.dream);
+    }
+  }, [location]);
 
   const openModal = () => {
     setShowModal(!showModal);
@@ -15,9 +40,6 @@ export default function FixedButtom() {
   const closeModal = () => {
     setShowModal(false);
   };
-
-  // console.log(location);
-  // console.log(location.pathname.includes("quote"));
 
   return (
     <>
@@ -32,10 +54,11 @@ export default function FixedButtom() {
         )}
       </div>
       {showModal && (
-        // <h1 className="bg-salmon-900 w-28 h-24 absolute top-0 left-0 right-0 bottom-0 m-auto">
-        //   GA
-        // </h1>
-        <ModalMore text={"Un sueño más"} closeModal={closeModal} />
+        <ModalMore
+          text={modal_page.text}
+          closeModal={closeModal}
+          textholder={modal_page.textholder}
+        />
       )}
     </>
   );
