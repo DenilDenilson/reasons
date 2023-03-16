@@ -40,7 +40,7 @@ export default function FixedButtom() {
 
   const closeModal = () => {
     setShowModal(false);
-    //document.body.classList.remove("overflow-y-hidden");
+    document.body.classList.remove("overflow-y-hidden");
   };
 
   return (
@@ -56,16 +56,17 @@ export default function FixedButtom() {
         )}
       </div>
       {showModal && (
-        <div
-          onClick={openModal}
-          className="absolute top-0 w-screen h-screen backdrop-blur-sm"
-        >
+        <>
+          <div
+            onClick={openModal}
+            className="absolute z-10 top-0 w-screen h-screen backdrop-blur-sm"
+          ></div>
           <ModalMore
             text={modal_page.text}
             closeModal={closeModal}
             textholder={modal_page.textholder}
           />
-        </div>
+        </>
       )}
     </>
   );
