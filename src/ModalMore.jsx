@@ -15,7 +15,7 @@ export default function ModalMore({ text, closeModal, textholder }) {
         className="placeholder-greys-BORDER placeholder:small-regular border-[1px] border-greys-BORDER h-24 p-2 rounded-lg border-opacity-50 small-regular text-greys-TEXT outline-1 focus:outline-base-500"
         placeholder={textholder}
       />
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-start h-7">
         <DreamSelection text={"Selection"} textStyle={"title-small-bold"} />
         <SecondaryButton text={"Añadir"} />
       </div>

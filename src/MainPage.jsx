@@ -10,15 +10,15 @@ export default function MainPage() {
 
   const openModal = () => {
     setShowModal(!showModal);
+    document.body.classList.toggle("overflow-y-hidden");
   };
 
   return (
-    <div className="min-h-screen relative bg-greys-BG">
-      <NavTop onClick={openModal} />
+    <div className=" bg-greys-BG">
       <Outlet />
+      <NavTop onClick={openModal} showModal={showModal} />
       <NavBot />
       <FixedButtom />
-      {showModal && <NavTopOptions />}
     </div>
   );
 }

@@ -6,9 +6,9 @@ import MailBox from "./assets/MailBox";
 
 export default function NavTopOptions() {
   return (
-    <ul className="absolute top-12 right-4 flex flex-col p-4 bg-greys-BG gap-4 border-2 border-base-600 rounded-lg">
+    <ul className="absolute top-0 right-4 flex flex-col p-4 bg-greys-BG gap-4 border-2 border-base-600 rounded-lg">
       <li className="w-64 bg-greys-BG">
-        <a href="" className="flex gap-4">
+        <a href="/reasons" className="flex gap-4">
           <span>
             <Person width={24} height={24} fill={"#FE163D"} />
           </span>
